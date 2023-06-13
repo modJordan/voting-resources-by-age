@@ -3,34 +3,45 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Vote Now! (or later)</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
-  <script type="text/javascript" src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vote Now! (or later)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@400;900&family=Libre+Baskerville&family=Manrope:wght@400;700&family=Playfair+Display&family=Shrikhand&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div>
-        <form>
+        <form class="container">
             <label for="age">Please enter your current age:</label>
-            <input id ="age" type="number">
+            <input id="age" type="number">
             <button type="submit">Submit</button>
         </form>
     </div>
     <div id="old-enough" class="hidden">
-        <h2>Old Enough</h2>
-        <a href="https://www.usa.gov/register-to-vote">Click here to find out how to register in your state!</a>
-        <br>
-        <a href="https://www.vote.org/polling-place-locator/">Click here to find the closes polling booths to your address</a>
-        <br>
-        <a href="https://ballotpedia.org/Elections_calendar">CLick here to find the next elections in your state and area</a>
+        <div class="container">
+            <h2>Old Enough</h2>
+            <a href="https://www.usa.gov/register-to-vote">Click here to find out how to register in your state!</a>
+            <br>
+            <a href="https://www.vote.org/polling-place-locator/">Click here to find the closes polling booths to your
+                address</a>
+            <br>
+            <a href="https://ballotpedia.org/Elections_calendar">CLick here to find the next elections in your state and
+                area</a>
+        </div>
     </div>
 
     <div id="minor" class="hidden">
-        <h2>Minor</h2>
-        <a href="https://www.usa.gov/register-to-vote">Click here to learn more about the process of voting</a>
+        <div class="container">
+            <h2>Minor</h2>
+            <a href="https://www.usa.gov/register-to-vote">Click here to learn more about the process of voting</a>
+        </div>
     </div>
 
 </body>
